@@ -11,6 +11,7 @@ int main()
 	cout<<"A = \101 =\x41 \n";
 	cout<<"\x56\x61\x6b\x69\x6d\n";
 	cout<<" I love u \t \\ \\ sus sus \\ \\ \n";
+	cout<<sizeof(int)<<endl;
 	system("pause");
     return (0);
 }
