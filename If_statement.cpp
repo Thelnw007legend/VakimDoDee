@@ -2,60 +2,46 @@
 #include <string>
 using namespace std;
 int main()
-{	
-	/*char Choice;
-	float Area;
-	cout<<"Program calculate Area"<<endl;
-	cout<<"1.Circle"<<endl;
-	cout<<"2.Rectangle"<<endl;
-	cout<<"3.Right-angled Triangle"<<endl;
-	cout<<"4.Exit"<<endl;
-	cout<<"Enter your Choose number : ";
-	cin>>Choice;
-	
-	if (Choice == '1'){
-		float Radius;
-		cout<<"\nEnter Radius :";
-		cin>>Radius;
-		Area = 3.14159f*Radius*Radius;
-		cout<<"Area of Circle ="<< Area <<endl;
+{	/*int num,value;
+	int pos =0,neg =0, zero =0;
+	cout<<"Enter number :";
+	cin>>num;
+	int i = 1;
+	while (i <= num)
+	{	cout<<" Enter Value "<< i <<" : ";
+		cin>>value;
+		if (value>0)pos++;
+		else if (value<0)neg++;
+		else zero++;
+		i++;
 	}
-	else if (Choice == '2'){
-		float Length,Width;
-		cout<<"\Enter length and width :";
-		cin>> Length >> Width;
-		Area = Length*Width;
-		cout<<" Area of Rectangle ="<< Area <<endl;
-	}
-	else if (Choice == '3'){
-		float Base,Height;
-		cout<<"\nEnter length and width :";
-		cin>> Base >> Height;
-		Area = 0.5*Base*Height;
-		cout<<" Area of Right-angled Triangle =" << Area <<endl ;
-	}
-	
-	else if (Choice == '4') cout<<"\n. . . Exit Program. . .\n";
-	
-	else cout<<"\nYou choose out of range is not process.\n";
+	cout<<"*********************************\n";
+	cout<<"Negative = "<< neg <<" numbers\n";
+	cout<<"Positive = "<< pos <<" numbers\n";
+	cout<<"Zero	= "<< zero <<" numbers\n";
 	*/
-	int num1,num2;
-	int total = 0;
-	cout<<"Enter num1 :";
-	cin>>num1;
-	cout<<"Enter num2 :";
-	cin>>num2;
-	cout<<"************************"<<endl;
-	for (int n = 1; n <= num2; n++)
-	{	cout<<num1<<" x "<< n <<" = "<<num1*n<<endl;
-		total = total+(num1*n);
+	
+	int Num,Value,Sum;
+	bool Flag = true;
+	Num = 1;
+	Sum = 0;
+	do{
+			cout<<"Enter value "<< Num <<" : ";
+			cin>>Value;
+			if((Value >= 1)&&(Value <= 20)){
+				Sum +=Value;
+				Num++;
+			}
+			else Flag = false;
+	}while (Flag == true);
+	if(Num> 1){
+		float Avg;
+		Avg = static_cast<float>(Sum)/--Num;
+		cout<<"Average of data = "<<Avg <<endl;
 	}
-	cout<<"Total = "<<total<<endl;
-	cout<<"AVG. = "<<total/(float)num2<<endl;
+	else cout<<"NO data input."<<endl;
 	
-	
-
-
+			
 
 
 
