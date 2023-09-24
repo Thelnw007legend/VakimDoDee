@@ -8,7 +8,7 @@ using namespace std;
 
 void fillRandom(int arry[10]) {
     for (int i = 0; i < 10; i++) {
-        arry[i] = rand() % 10 + 1; 
+        arry[i] = rand() % 30 + 1; 
     }
 }
 
@@ -19,10 +19,10 @@ int main() {
 
     fillRandom(arry); 
     
-    cout<< "Element\t" << "Value\t" << "Histogram\t" << endl;
+    cout << "Element\t" << "Value\t" << "Histogram\t" << endl;
 
     for (int i = 0; i < 10; i++) {
-        cout<< i << "\t" << arry[i] << " \t";
+        cout << i << "\t" << arry[i] << " \t";
         
         for (int j = 1; j <= arry[i]; j++) {
             cout << "*";
